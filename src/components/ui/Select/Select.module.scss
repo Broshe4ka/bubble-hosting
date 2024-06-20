@@ -1,0 +1,41 @@
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__group {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
+
+.input {
+  &__title {
+    font: {
+      size: 1.6rem;
+      weight: 700;
+    }
+    line-height: 120%; /* 38.4px */
+    letter-spacing: -0.96px;
+  }
+  &__range {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.range {
+  width: 0.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+}

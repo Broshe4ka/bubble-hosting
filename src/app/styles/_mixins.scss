@@ -1,0 +1,9 @@
+@mixin text-logo {
+  font: {
+    size: 1.6rem;
+    weight: 700;
+  }
+  line-height: auto;
+  letter-spacing: -3%;
+  color: var(--main-text);
+}

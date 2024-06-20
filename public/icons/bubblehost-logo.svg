@@ -1,0 +1,34 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo">
+<path d="M0 16C0 7.16344 7.16344 0 16 0H48C56.8366 0 64 7.16344 64 16V48C64 56.8366 56.8366 64 48 64H16C7.16344 64 0 56.8366 0 48V16Z" fill="url(#paint0_linear_29_791)"/>
+<path d="M27 12H32V17H27V14.5V12Z" fill="white"/>
+<path d="M32 12H37V17H32V12Z" fill="white"/>
+<path d="M22 12H27V14.5V17H22V12Z" fill="white"/>
+<path d="M17 17H22V22H17V19.5V17Z" fill="white"/>
+<path d="M22 22H27V27H22V22Z" fill="white"/>
+<path d="M22 27H27V32H22V27Z" fill="white"/>
+<path d="M27 22H32V27H27V22Z" fill="white"/>
+<path d="M12 22H17V27H12V22Z" fill="white"/>
+<path d="M12 27H17V32H12V27Z" fill="white"/>
+<path d="M12 32H17V37H12V32Z" fill="white"/>
+<path d="M12 37H17V42H12V37Z" fill="white"/>
+<path d="M17 42H22V47H17V42Z" fill="white"/>
+<path d="M37 12H42V17H37V12Z" fill="white"/>
+<path d="M37 52H32V47H37V52Z" fill="white"/>
+<path d="M32 52H27V47H32V52Z" fill="white"/>
+<path d="M42 52H37V47H42V52Z" fill="white"/>
+<path d="M47 47H42V42H47V47Z" fill="white"/>
+<path d="M52 42H47V37H52V42Z" fill="white"/>
+<path d="M52 37H47V32H52V37Z" fill="white"/>
+<path d="M52 32H47V27H52V32Z" fill="white"/>
+<path d="M52 27H47V22H52V27Z" fill="white"/>
+<path d="M47 22L42 22V17H47V22Z" fill="white"/>
+<path d="M27 52H22V47H27V52Z" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_29_791" x1="64" y1="0" x2="0" y2="64" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8E54E9"/>
+<stop offset="1" stop-color="#4776E6"/>
+</linearGradient>
+</defs>
+</svg>

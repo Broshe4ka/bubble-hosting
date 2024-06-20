@@ -1,0 +1,29 @@
+.promotion {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  justify-content: space-between;
+  margin: 3.2rem 0;
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  &__text {
+    width: fit-content;
+    font: {
+      size: 1.2rem;
+      weight: 700;
+    }
+    text-align: center;
+    letter-spacing: -0.96px;
+    span {
+      color: var(--accient-color-1);
+    }
+  }
+
+  &__img {
+    width: 3.2rem;
+  }
+}

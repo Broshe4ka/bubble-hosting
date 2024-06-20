@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame">
+<path id="Vector" d="M32 13V29H44M56 29C56 32.1517 55.3792 35.2726 54.1731 38.1844C52.967 41.0962 51.1992 43.742 48.9706 45.9706C46.742 48.1992 44.0962 49.967 41.1844 51.1731C38.2726 52.3792 35.1517 53 32 53C28.8483 53 25.7274 52.3792 22.8156 51.1731C19.9038 49.967 17.258 48.1992 15.0294 45.9706C12.8008 43.742 11.033 41.0962 9.82689 38.1844C8.62078 35.2726 8 32.1517 8 29C8 22.6348 10.5286 16.5303 15.0294 12.0294C19.5303 7.52856 25.6348 5 32 5C38.3652 5 44.4697 7.52856 48.9706 12.0294C53.4714 16.5303 56 22.6348 56 29Z" stroke="url(#paint0_linear_29_964)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_29_964" x1="56" y1="5" x2="8" y2="53" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8E54E9"/>
+<stop offset="1" stop-color="#4776E6"/>
+</linearGradient>
+</defs>
+</svg>
