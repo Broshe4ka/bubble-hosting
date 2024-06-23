@@ -1,3 +1,4 @@
+import { Nunito_Sans } from 'next/font/google';
 import type { Metadata } from 'next';
 import Header from '@/components/ui/Layout/Header/Header';
 import Footer from '@/components/ui/Layout/Footer/Footer';
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
   icons: { icon: '/favicon/site-logo.svg' },
 };
 
+const mainFont = Nunito_Sans({ subsets: ['cyrillic'] });
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,7 +21,9 @@ export default function RootLayout({
     <html lang="ru">
       <body>
         <Header />
-        <main className="main">{children}</main>
+        <main className={`${mainFont.className} main`}>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
