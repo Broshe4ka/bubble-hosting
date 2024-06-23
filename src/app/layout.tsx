@@ -19,11 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body>
+      <body className={mainFont.className}>
         <Header />
-        <main className={`${mainFont.className} main`}>
-          {children}
-        </main>
+        <main className="main">{children}</main>
         <Footer />
       </body>
     </html>
