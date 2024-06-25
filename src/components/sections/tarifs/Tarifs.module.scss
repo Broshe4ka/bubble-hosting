@@ -43,7 +43,7 @@
 
 .tarifs {
   width: 100%;
-  max-height: 26rem;
+  max-height: 25.5rem;
 
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@
 
   overflow-y: auto;
 
-  scrollbar-color: var(--faq-borders) var(--background-main);
+  scrollbar-color: var(--faq-borders) transparent;
   scrollbar-width: thin;
 
   &__title {

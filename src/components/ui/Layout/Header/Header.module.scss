@@ -26,37 +26,4 @@
     letter-spacing: -0.96px;
     text-wrap: nowrap;
   }
-
-  &__nav {
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
-  }
-
-  &__link {
-    display: block;
-    position: relative;
-    padding: 0.4rem 0;
-    text-wrap: nowrap;
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      right: 0;
-
-      width: 0;
-      height: 2px;
-
-      opacity: 0;
-
-      background: var(--main-text);
-
-      transition: 0.3s ease-in-out;
-    }
-    &:hover::after {
-      width: 100%;
-      opacity: 1;
-      left: 0;
-    }
-  }
 }

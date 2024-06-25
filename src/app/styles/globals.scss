@@ -29,11 +29,11 @@
   --button-radius: 0.6rem;
   --container-padding: 3rem;
 
-  --media-default: 1920px;
-  --media-small: 1440px;
-  --media-hd: 1200px;
-  --media-tablet: 992px;
-  --media-phone: 767px;
+  // --media-default: 1920px;
+  // --media-small: 1440px;
+  // --media-hd: 1200px;
+  // --media-tablet: 992px;
+  // --media-phone: 767px;
 }
 
 * {
@@ -41,7 +41,12 @@
 }
 
 html {
-  font-size: 20px;
+  scrollbar-color: var(--faq-borders) transparent;
+  scrollbar-width: thin;
+  font-size: 24px;
+  @media (max-width: 1920px) {
+    font-size: 20px;
+  }
 }
 
 body {
@@ -64,6 +69,7 @@ body {
   flex-direction: column;
   align-items: stretch;
   flex-grow: 1;
+  overflow: hidden;
 }
 //
 .container {
@@ -72,8 +78,6 @@ body {
     right: var(--container-padding);
   }
   width: 100%;
-  // max-width: 1920px;
-  // @include text-logo;
 }
 
 .button {
@@ -113,7 +117,7 @@ body {
 }
 
 .title {
-  font-size: clamp(1.2rem, 5vw, 2.4rem);
+  font-size: clamp(1.2rem, 3vw, 2.4rem);
   font-weight: 900;
   line-height: 120%;
   letter-spacing: -0.48px;
