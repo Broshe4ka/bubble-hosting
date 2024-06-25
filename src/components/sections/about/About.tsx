@@ -3,8 +3,8 @@ import styles from './About.module.scss';
 export default function About() {
   return (
     <section className={`${styles.about} container`}>
-      <div className={styles.about__nav}>
-        <h2 className={styles.about__title}>
+      <div className={`${styles.about__nav} bubble`}>
+        <h2 className={`${styles.about__title} title`}>
           Быстрый и надежный игровой хостинг Minecraft Java
           Edition с продвинутой защитой от DDoS
         </h2>

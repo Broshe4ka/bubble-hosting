@@ -4,6 +4,7 @@ interface tarifProps {
   id: number;
   title: string;
   icon: string;
+  icon_bg: string;
   cpu: number;
   ram: number;
   storage: number;
@@ -14,6 +15,7 @@ interface tarifProps {
 export default function Tarif({
   title,
   icon,
+  icon_bg,
   cpu,
   ram,
   storage,
@@ -22,8 +24,15 @@ export default function Tarif({
 }: tarifProps) {
   return (
     <div className={styles.tarif}>
-      <div className={styles.tarif__img}>
-        <img src={icon} alt="Tarif img" />
+      <div
+        style={{ background: icon_bg }}
+        className={styles.tarif__img}
+      >
+        <img
+          src={icon}
+          alt="Tarif img"
+          className={styles.tarif__picture}
+        />
       </div>
       <div className={styles.tarif__info}>
         <span className={styles.tarif__title}>{title}</span>

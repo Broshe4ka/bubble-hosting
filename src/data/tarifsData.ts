@@ -3,6 +3,8 @@ export const tarifsData = [
     id: 1,
     title: 'BubbleBee',
     icon: '/images/bee.png',
+    icon_bg:
+      'linear-gradient(225deg, #f7971e 0%, #ffd200 100%)',
     cpu: 6,
     ram: 16,
     storage: 60,
@@ -12,7 +14,9 @@ export const tarifsData = [
   {
     id: 2,
     title: 'BubbleBee2',
-    icon: '/images/bee.png',
+    icon: '/images/dolphin.png',
+    icon_bg:
+      'linear-gradient(225deg, #2F80ED 0%, #56CCF2 100%)',
     cpu: 6,
     ram: 16,
     storage: 60,
@@ -22,7 +26,9 @@ export const tarifsData = [
   {
     id: 3,
     title: 'BubbleBee3',
-    icon: '/images/bee.png',
+    icon: '/images/panda.png',
+    icon_bg:
+      'linear-gradient(225deg, #f3f520 0%, #59d102 100%)',
     cpu: 6,
     ram: 16,
     storage: 60,
@@ -32,7 +38,9 @@ export const tarifsData = [
   {
     id: 4,
     title: 'BubbleBee4',
-    icon: '/images/bee.png',
+    icon: '/images/guardian.png',
+    icon_bg:
+      'linear-gradient(225deg, #adfda2 0%, #11d3f3 100%)',
     cpu: 6,
     ram: 16,
     storage: 60,
@@ -42,7 +50,9 @@ export const tarifsData = [
   {
     id: 5,
     title: 'BubbleBee5',
-    icon: '/images/bee.png',
+    icon: '/images/frog.png',
+    icon_bg:
+      'linear-gradient(225deg, #f9655b 0%, #ee821a 100%)',
     cpu: 6,
     ram: 16,
     storage: 60,
@@ -52,7 +62,9 @@ export const tarifsData = [
   {
     id: 6,
     title: 'BubbleBee6',
-    icon: '/icons/monitoring_mini.svg',
+    icon: '/images/puffer_fish.png',
+    icon_bg:
+      'linear-gradient(225deg, #cad0ff 0%, #e3e3e3 100%)',
     cpu: 6,
     ram: 16,
     storage: 60,

@@ -11,7 +11,7 @@
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 
   &__info {
-    width: 100%;
+    width: calc(62% - 16px);
 
     display: flex;
     flex-direction: column;
@@ -41,13 +41,12 @@
     justify-content: center;
     aspect-ratio: 1/1;
     border-radius: 0.4rem;
-    background: linear-gradient(
-      225deg,
-      #f7971e 0%,
-      #ffd200 100%
-    );
-    width: 60%;
+    background: #131313;
+    width: 38%;
     padding: 0.6rem;
+  }
+  &__picture {
+    width: 100%;
   }
   &__button {
     margin-top: 0.6em;
@@ -66,7 +65,8 @@
   }
 }
 .chars__group {
-  width: calc(50% - (0.6rem / 2));
+  // width: calc(50% - (0.6rem / 2));
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;

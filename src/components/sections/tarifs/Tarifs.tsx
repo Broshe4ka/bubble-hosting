@@ -9,6 +9,7 @@ export default function Tarifs() {
     <section className={`${styles.tarifses} container`}>
       <div className={styles.left}>
         <div className={styles.inputs}>
+          {/* #TODO: Сделать фильтрацию по этим лесектам (чекнуть диаграмку) */}
           {selectData.map((selectData) => (
             <Select key={selectData.id} {...selectData} />
           ))}
@@ -24,11 +25,11 @@ export default function Tarifs() {
           сервере!
         </span>
       </div>
-      <div className={styles.right}>
+      <div className={`${styles.right} bubble `}>
         <div className={styles.tarifs__title}>
           Подходящие тарифы:
         </div>
-        <div className={styles.tarifs}>
+        <div className={`${styles.tarifs} `}>
           {tarifsData.map((tarifData) => (
             <Tarif key={tarifData.id} {...tarifData} />
           ))}

@@ -3,6 +3,7 @@ import styles from './Header.module.scss';
 
 export default function Header() {
   return (
+    // #TODO: Сделать мобильную версию
     <header className={`${styles.header} container`}>
       <Link href="/" className={styles.header__logo}>
         <img
