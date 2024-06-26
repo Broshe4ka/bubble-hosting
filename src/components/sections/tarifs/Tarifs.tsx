@@ -6,10 +6,13 @@ import styles from './Tarifs.module.scss';
 
 export default function Tarifs() {
   return (
-    <section className={`${styles.tarifses} container`}>
+    <section
+      id="tarifs"
+      className={`${styles.tarifses} container`}
+    >
       <div className={styles.left}>
         <div className={styles.inputs}>
-          {/* #TODO: Сделать фильтрацию по этим лесектам (чекнуть диаграмку) */}
+          {/* #TODO: Сделать фильтрацию по этим слектам :) (чекнуть диаграмку) */}
           {selectData.map((selectData) => (
             <Select key={selectData.id} {...selectData} />
           ))}

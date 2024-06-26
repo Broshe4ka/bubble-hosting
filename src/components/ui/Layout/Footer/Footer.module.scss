@@ -32,4 +32,9 @@
 
     background: var(--additional-text);
   }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.4rem;
+  }
 }

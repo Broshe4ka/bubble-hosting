@@ -6,7 +6,7 @@ import { faqData } from '@/data/faqData';
 
 export default function Faq() {
   return (
-    <section className={`${styles.faq} container`}>
+    <section id="faq" className={`${styles.faq} container`}>
       <h2 className={`${styles.faq__title} title`}>F.A.Q</h2>
       <div className={`${styles.faq__setcions} bubble`}>
         <div className={styles.accordions}>
@@ -19,7 +19,13 @@ export default function Faq() {
             />
           ))}
         </div>
-        <div className="discord">Сюда дискорд типа</div>
+        <div className={styles.discord}>
+          <iframe
+            className={styles.discord__widget}
+            src="https://discord.com/widget?id=1061730448830632110&theme=dark"
+            // sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+          />
+        </div>
       </div>
     </section>
   );

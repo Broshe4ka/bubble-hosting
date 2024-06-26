@@ -3,6 +3,9 @@
   align-items: stretch;
   justify-content: space-between;
   gap: 2.4rem;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 }
 
 .left {
@@ -10,6 +13,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  @media (max-width: 1200px) {
+    gap: 1.6rem;
+  }
 }
 
 .inputs {
@@ -25,6 +31,10 @@
     flex-direction: column;
     gap: 0.6rem;
   }
+
+  @media (max-width: 1200px) {
+    gap: 1.6rem;
+  }
 }
 
 .description {
@@ -39,6 +49,9 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
 }
 
 .tarifs {
@@ -58,10 +71,13 @@
 
   &__title {
     font: {
-      size: 1.6rem;
+      size: clamp(1.2rem, 3vw, 1.6rem);
       weight: 700;
     }
     line-height: 120%;
     letter-spacing: -0.96px;
+  }
+  @media (max-width: 1200px) {
+    flex-direction: row;
   }
 }

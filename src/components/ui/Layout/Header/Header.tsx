@@ -1,9 +1,17 @@
 import Navbar from '../../Navbar/Navbar';
-
+import { useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.scss';
 
 export default function Header() {
+  const [isScrolled, setIsScrolles] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // window.screenY != 0 ? isScrolled() : isScrolled();
+    };
+  });
   return (
     <header className={`${styles.header} container`}>
       <Link href="/" className={styles.header__logo}>

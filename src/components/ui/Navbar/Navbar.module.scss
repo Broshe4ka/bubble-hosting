@@ -1,27 +1,42 @@
 .nav {
+  // display: none;
   display: flex;
   align-items: center;
   gap: 2.4rem;
 
-  // @media (max-width: 992px) {
-  //   position: fixed;
-  //   // #TODO: Отредачить значение top
-  //   top: 0;
-  //   left: 0;
+  @media (max-width: 992px) {
+    position: fixed;
 
-  //   width: 100%;
-  //   padding: 0.8rem;
+    width: 100%;
+    top: 0;
+    right: 0;
 
-  //   align-items: flex-start;
-  //   flex-direction: column;
-  //   gap: 0.8rem;
+    padding-top: 4.8rem;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    padding-bottom: 1.2rem;
 
-  //   background: #000;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
 
-  //   z-index: 10;
-  // }
+    background: #1d1d1d;
+
+    z-index: -1;
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    border-radius: 0 0 1rem 1rem;
+    border-bottom: 1px solid var(--border-hover);
+    transition: 0.3s ease-in-out;
+  }
+
   &__openned {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
   }
 }
 

@@ -32,7 +32,7 @@
 
   &__title {
     font: {
-      size: 1.6rem;
+      size: clamp(1rem, 2.5vw, 1.6rem);
       weight: 700;
     }
     letter-spacing: -0.96px;

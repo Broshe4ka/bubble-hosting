@@ -17,16 +17,32 @@ export default function Navbar() {
           isOpen ? styles.nav__openned : ''
         }`}
       >
-        <a href="#" className={styles.link}>
+        <a
+          href="#promotion"
+          className={styles.link}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           Почему мы?
         </a>
-        <a href="#" className={styles.link}>
+        <a
+          href="#tarifs"
+          className={styles.link}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           Выбрать тариф
         </a>
-        <a href="#" className={styles.link}>
+        <a
+          href="Тут ссылку на дсикорд"
+          className={styles.link}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           Поддержка
         </a>
-        <a href="#" className={styles.link}>
+        <a
+          href="#faq"
+          className={styles.link}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           F.A.Q.
         </a>
       </div>

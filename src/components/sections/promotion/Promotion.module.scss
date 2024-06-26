@@ -3,11 +3,16 @@
   align-items: center;
   gap: 1.6rem;
   justify-content: space-between;
-  margin: 3.2rem 0;
+  margin: var(--container-margin);
   &__block {
     display: flex;
     align-items: center;
     gap: 0.4rem;
+    @media (max-width: 1200px) {
+      width: 100%;
+      flex-direction: column;
+      line-height: 110%;
+    }
   }
 
   &__text {
@@ -25,5 +30,11 @@
 
   &__img {
     width: 3.2rem;
+  }
+  @media (max-width: 1200px) {
+    align-items: flex-start;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
   }
 }
