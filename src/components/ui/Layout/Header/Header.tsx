@@ -5,18 +5,20 @@ import Link from 'next/link';
 import styles from './Header.module.scss';
 
 export default function Header() {
-  const [isScrolled, setIsScrolles] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const scrollListener = () => {
-    const scrollValue = document.documentElement.scrollTop;
-    if (scrollValue > 0) {
-      setIsScrolles(true);
-    } else {
-      setIsScrolles(false);
-    }
-  };
+  useEffect(() => {
+    const scrollListener = () => {
+      const scrollValue = document.documentElement.scrollTop;
+      setIsScrolled(scrollValue > 0);
+    };
 
-  window.addEventListener('scroll', scrollListener);
+    window.addEventListener('scroll', scrollListener);
+
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    };
+  }, []);
 
   return (
     <header
