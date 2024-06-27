@@ -1,20 +1,29 @@
 'use client';
 import Navbar from '../../Navbar/Navbar';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.scss';
 
 export default function Header() {
-  const [isScrolled, setIsScrolles] = useState(true);
+  const [isScrolled, setIsScrolles] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // window.screenY != 0 ? isScrolled() : isScrolled();
-    };
-  });
+  const scrollListener = () => {
+    const scrollValue = document.documentElement.scrollTop;
+    if (scrollValue > 0) {
+      setIsScrolles(true);
+    } else {
+      setIsScrolles(false);
+    }
+  };
+
+  window.addEventListener('scroll', scrollListener);
+
   return (
-    <header className={`${styles.header} container`}>
+    <header
+      className={`${styles.header} container ${
+        isScrolled ? styles.scrolled : ''
+      }`}
+    >
       <Link href="/" className={styles.header__logo}>
         <img
           src="/icons/bubblehost-logo.svg"

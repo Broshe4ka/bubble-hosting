@@ -48,7 +48,9 @@ export default function Navbar() {
       </div>
 
       <div
-        className={styles.burger}
+        className={`${styles.burger} ${
+          isOpen ? styles.opened : ''
+        }`}
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className={styles.burger__row}></span>

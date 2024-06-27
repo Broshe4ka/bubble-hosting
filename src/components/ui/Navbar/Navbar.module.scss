@@ -89,26 +89,26 @@
   @media (max-width: 992px) {
     display: flex;
   }
+  &.opened &__row {
+    position: absolute;
+
+    &:nth-child(2) {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &:nth-child(1) {
+      rotate: 45deg;
+    }
+    &:nth-child(3) {
+      rotate: -45deg;
+    }
+  }
 
   &__row {
     width: 32px;
     height: 2px;
     border-radius: 0.4rem;
     background: var(--main-text);
-  }
-}
-
-.opened {
-  position: absolute;
-
-  &:nth-child(2) {
-    opacity: 0;
-    visibility: hidden;
-  }
-  &:nth-child(1) {
-    rotate: 45deg;
-  }
-  &:nth-child(3) {
-    rotate: -45deg;
+    transition: 0.3s ease;
   }
 }
