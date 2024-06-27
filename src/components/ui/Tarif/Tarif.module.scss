@@ -53,6 +53,10 @@
     background: #131313;
     width: 38%;
     padding: 0.6rem;
+    @media (max-width: 992px) {
+      width: 6rem;
+      height: 6rem;
+    }
   }
   &__picture {
     width: 100%;
