@@ -1,3 +1,9 @@
+'use client';
+
+import {
+  MouseParallaxChild,
+  MouseParallaxContainer,
+} from 'react-parallax-mouse';
 import styles from './About.module.scss';
 
 export default function About() {
@@ -19,7 +25,31 @@ export default function About() {
         </a>
       </div>
 
-      <div className={styles.info}>
+      <MouseParallaxContainer className={styles.info}>
+        <MouseParallaxChild
+          factorX={0.01}
+          factorY={0.01}
+          style={{
+            bottom: '-3.2rem',
+            left: '-3.2rem',
+          }}
+          className={styles.paralax_img}
+        >
+          <img src="/images/big_salmon.png" />
+        </MouseParallaxChild>
+
+        <MouseParallaxChild
+          factorX={0.02}
+          factorY={0.03}
+          style={{
+            bottom: '-2.4rem',
+            left: '6.4rem',
+          }}
+          className={styles.paralax_img}
+        >
+          <img src="/images/small_salmon.png" />
+        </MouseParallaxChild>
+
         <h3 className={styles.info__title}>Почему мы?</h3>
         <div className={styles.info__groups}>
           <div className={styles.group}>
@@ -109,7 +139,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </MouseParallaxContainer>
     </section>
   );
 }
