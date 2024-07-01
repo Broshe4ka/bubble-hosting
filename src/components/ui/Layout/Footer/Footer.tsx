@@ -4,7 +4,6 @@ import styles from './Footer.module.scss';
 export default function Footer() {
   return (
     <footer className={`${styles.footer} container`}>
-      {/* #TODO: Сделать mxd макеты для странниц с инфой */}
       <Link
         className={styles.footer__link}
         href="/user-agreement"
